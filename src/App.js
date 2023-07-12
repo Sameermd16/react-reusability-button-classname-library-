@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Button from './components/Button.js'
+import { FcGoogle } from 'react-icons/fc'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main> 
+      <Button 
+        // style={{color: "green"}} 
+        // onClick={() => console.log("button clicked")} 
+        // onDoubleClick={()=> console.log("double clicked")}
+        size="lg"
+        className="green"
+        variant="danger"
+      >
+        <FcGoogle />
+        Log in with Google
+      </Button>
+    </main>
   );
 }
 
